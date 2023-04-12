@@ -55,13 +55,13 @@
               sapiente mollitia consectetur harum maiores nobis optio aperiam?
             </p>
             <div class="tabs__btns">
-              <span class="tabs__btn tab__active">Main Skills</span>
-              <span class="tabs__btn">Education</span>
-              <span class="tabs__btn">Certification</span>
+              <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+              <span class="tabs__btn" data-target="#education">Education</span>
+              <span class="tabs__btn" data-target="#certification">Certification</span>
             </div>
 
             <div class="tabs__content">
-              <div class="tabs-item tab__active">
+              <div class="tabs__item tab__active" data-content id="skills">
                 <div class="tabs__data grid">
                   <p class="tabs__description">
                     <span>Responsive websites</span> - UI/UX
@@ -73,14 +73,14 @@
                   </p>
                 </div>
               </div>
-              <div class="tabs-item">
+              <div class="tabs__item" data-content id="education">
                 <div class="tabs__data grid">
                   <p class="tabs__description">
                     <span>Javascript path</span> - SoftUni
                   </p>
                 </div>
               </div>
-              <div class="tabs-item">
+              <div class="tabs__item" data-content id="certification">
                 <div class="tabs__data grid">
                   <p class="tabs__description">
                     <span>HTML & CSS - MAY 2023</span> - SoftUni
