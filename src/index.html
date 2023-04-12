@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HOME -->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Welcome To My Portfolio</span>
+            <h1 class="home__title">
+              Hi, I'm Viktor Atanasov, a <span>Full-Stack JS Developer.</span>
+            </h1>
+          </div>
+          <img
+            src="assets/images/js.png"
+            alt="javascript logo"
+            class="home__img"
+          />
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img
+            src="assets/images/js.png"
+            alt="javascript logo"
+            class="about__img"
+          />
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae minus aspernatur et quisquam voluptatem, doloremque
+              nisi veniam eligendi fugiat. Aliquam perferendis dignissimos
+              sapiente mollitia consectetur harum maiores nobis optio aperiam?
+            </p>
+            <div class="tabs__btns">
+              <span class="tabs__btn tab__active">Main Skills</span>
+              <span class="tabs__btn">Education</span>
+              <span class="tabs__btn">Certification</span>
+            </div>
+
+            <div class="tabs__content">
+              <div class="tabs-item tab__active">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>Responsive websites</span> - UI/UX
+                    <span
+                      >It's very important to make sites responsive in order to
+                      deliver pleasurable experience to users not matter the
+                      device that they use.</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="tabs-item">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>Javascript path</span> - SoftUni
+                  </p>
+                </div>
+              </div>
+              <div class="tabs-item">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>HTML & CSS - MAY 2023</span> - SoftUni
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
