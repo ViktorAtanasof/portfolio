@@ -60,16 +60,11 @@
   box-sizing: border-box;
 }
 
-input,
-textarea,
 body {
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--weight-300);
-}
-
-body {
   background-color: var(--body-color);
 }
 
@@ -78,10 +73,6 @@ h2,
 h3 {
   color: var(--title-color);
   font-weight: var(--weight-700);
-}
-
-ul {
-  list-style: none;
 }
 
 a {
@@ -94,13 +85,6 @@ p {
 
 img {
   max-width: 100%;
-}
-
-input,
-textarea {
-  background-color: none;
-  border: none;
-  outline: none;
 }
 
 /* Reusable CSS classes */
