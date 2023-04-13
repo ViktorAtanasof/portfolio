@@ -1,4 +1,4 @@
-/* Change header's background */
+/* CHANGE HEADER'S BACKGROUND */
 function scrollHeader() {
     const header = document.getElementById('header');
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
@@ -11,7 +11,20 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-/* About Tabs */
+/* SHOW SCROLL UP */
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up');
+    // When the scroll is greater than 350 viewport height, add the show-scroll class to the scroll-top class
+    if (this.scrollY >= 350) {
+        scrollUp.classList.add('show-scroll');
+    } else {
+        scrollUp.classList.remove('show-scroll');
+    }
+}
+
+window.addEventListener('scroll', scrollUp);
+
+/* ABOUT SECTION'S TABS */
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]');
 
