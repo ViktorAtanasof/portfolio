@@ -106,7 +106,7 @@ textarea {
 /* Reusable CSS classes */
 .container {
   max-width: 1260px;
-   margin: 0px auto;
+  margin: 0 auto;
   padding: 0.75rem;
   /* padding-inline: 0.75rem;
   margin-inline: auto; */
@@ -118,13 +118,25 @@ textarea {
 }
 
 .section {
-    padding: 8rem;
-    /* padding-block: 8rem; */
+  padding: 8rem;
+  /* padding-block: 8rem; */
 }
 
 .section__title {
-    font-size: var(--h1-font-size);
-    margin-bottom: 1rem;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.section__title:not(.about .section__title),
+.section__description {
+  text-align: center;
+}
+
+.section__description {
+  max-width: 600px;
+  margin: 0 auto;
+  /* margin-inline: auto; */
+  margin-bottom: 3.75rem;
 }
 
 /* <!-- HOME --> */
@@ -157,77 +169,77 @@ textarea {
 }
 
 .home__img {
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    border: 0.75rem solid var(--container-color);
-    margin-left: auto;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 0.75rem solid var(--container-color);
+  margin-left: auto;
 }
 
 /* <!-- ABOUT --> */
 .about {
-    background-color: var(--container-color);
+  background-color: var(--container-color);
 }
 
 .about__container {
-    grid-template-columns: 5fr 7fr;
-    align-items: center;
-    column-gap: 4rem;
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+  column-gap: 4rem;
 }
 
 .about__img {
-    border-radius: var(--radius);
+  border-radius: var(--radius);
 }
 
 .about__description {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .tabs__btns {
-    display: flex;
-    column-gap: 2.5rem;
-    margin-bottom: 1.25rem;
+  display: flex;
+  column-gap: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .tabs__btn,
 .tabs__description span:first-child {
-    font-weight: var(--weight-500);
+  font-weight: var(--weight-500);
 }
 
 .tabs__btn {
-    cursor: pointer;
-    color: var(--title-color);
-    position: relative;
-    padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: var(--title-color);
+  position: relative;
+  padding-bottom: 0.5rem;
 }
 
 .tabs__btn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 30%;
-    height: 2px;
-    background-color: var(--text-color);
-    transition: all 0.3s var(--transition);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: all 0.3s var(--transition);
 }
 
 .tabs__data {
-    row-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .tabs__description span:last-child {
-    display: block;
+  display: block;
 }
 
 /* Active tab */
 .tabs__btn.tab__active {
-    color: var(--first-color);
+  color: var(--first-color);
 }
 
 .tabs__btn.tab__active::after {
-    background-color: var(--first-color);
-    width: 100%;
+  background-color: var(--first-color);
+  width: 100%;
 }
 
 .tabs__item[data-content] {
@@ -236,6 +248,87 @@ textarea {
 
 .tab__active[data-content] {
   display: block;
+}
+
+/* <!-- WORK/PORTFOLIO --> */
+.portfolio {
+  background-color: var(--container-color);
+}
+
+.portfolio__container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio__item {
+  position: relative;
+  cursor: pointer;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.portfolio__item::after,
+.portfolio__data {
+  position: absolute;
+  transition: all 0.65s var(--transition);
+}
+
+.portfolio__item::after {
+  content: '';
+  inset: 0;
+  background: linear-gradient(180deg, transparent, var(--first-color));
+  opacity: 0;
+}
+
+.portfolio__img {
+  width: 100%;
+  vertical-align: middle;
+  transition: all 1s var(--transition);
+}
+
+.portfolio__data {
+  inset-inline: 2rem;
+  bottom: 1.25rem;
+  text-align: center;
+  z-index: var(--z-tooltip);
+}
+
+.portfolio__subtitle,
+.portfolio__description {
+  color: var(--title-color);
+  opacity: 0.7;
+}
+
+.portfolio__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.portfolio__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--weight-600);
+  margin-bottom: .75rem;
+}
+
+.portfolio__description {
+  font-weight: var(--weight-400);
+  display: none;
+}
+
+/* Work/Portfolio hover */
+.portfolio__item:hover::after {
+  opacity: 1;
+}
+
+.portfolio__item:hover .portfolio__img {
+  transform: scale(1.1);
+}
+
+.portfolio__item:hover .portfolio__description {
+  display: block;
+}
+
+.portfolio__item:hover .portfolio__data {
+  transform: translateY(-2rem);
 }
 
 /* BREAKPOINTS */
