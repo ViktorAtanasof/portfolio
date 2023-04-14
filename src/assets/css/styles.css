@@ -434,6 +434,10 @@ img {
   margin-left: auto;
 }
 
+.nav__socials a:nth-child(3) {
+  display: none;
+}
+
 .nav__social-link:hover {
   color: var(--first-color);
   transform: translateY(-0.25rem);
@@ -518,7 +522,17 @@ img {
     max-width: 960px;
   }
 
-  .nav__btns {
+  .nav__link-btn {
+    border-radius: 50%;
+    letter-spacing: 0;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__text {
     display: none;
   }
 
@@ -577,6 +591,10 @@ img {
   .nav__toggle,
   .nav__close {
     display: block;
+  }
+
+  .nav__socials a:nth-child(3) {
+    display: inline;
   }
 
   .nav__link-btn {
