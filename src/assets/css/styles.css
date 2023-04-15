@@ -241,6 +241,21 @@ img {
   display: block;
 }
 
+.tabs__description a {
+  color: var(--text-color);
+}
+
+.tabs__description a:hover {
+  color: var(--first-color);
+  text-decoration: underline;
+}
+
+#certification .tabs__data > p:nth-child(4) a {
+  font-style: italic;
+  font-weight: var(--weight-300);
+  color: var(--title-color);
+}
+
 /* Active tab */
 .tabs__btn.tab__active {
   color: var(--first-color);
@@ -270,7 +285,6 @@ img {
 
 .portfolio__item {
   position: relative;
-  cursor: pointer;
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -321,6 +335,14 @@ img {
 .portfolio__description {
   font-weight: var(--weight-400);
   display: none;
+}
+
+.project__links .nav__social-link {
+  font-size: var(--h3-font-size);
+}
+
+.project__links .nav__social-link:hover {
+  color: var(--body-color);
 }
 
 /* Work/Portfolio hover */
