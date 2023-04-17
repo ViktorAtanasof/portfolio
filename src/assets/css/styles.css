@@ -567,6 +567,7 @@ img {
 
   .home__content {
     order: 1;
+    text-align: center;
   }
 
   .home__img,
