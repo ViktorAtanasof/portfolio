@@ -1,4 +1,4 @@
-/* MOBILE MENU */
+// MOBILE MENU
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close');
@@ -25,7 +25,7 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-/* CHANGE HEADER'S BACKGROUND */
+// CHANGE HEADER'S BACKGROUND
 function scrollHeader() {
     const header = document.getElementById('header');
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
@@ -38,7 +38,7 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-/* SHOW SCROLL UP */
+// SHOW SCROLL UP
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is greater than 350 viewport height, add the show-scroll class to the scroll-top class
@@ -51,7 +51,7 @@ function scrollUp() {
 
 window.addEventListener('scroll', scrollUp);
 
-/* ABOUT SECTION'S TABS */
+// ABOUT SECTION'S TABS
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]');
 
