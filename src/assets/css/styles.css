@@ -146,6 +146,7 @@ img {
 .btn:hover {
   background-color: transparent;
   color: var(--first-color);
+  border-color: var(--first-color);
 }
 
 /* <!-- HOME --> */
