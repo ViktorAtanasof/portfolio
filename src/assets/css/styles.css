@@ -275,7 +275,7 @@ img {
   display: block;
 }
 
-/* <!-- WORK/PORTFOLIO --> */
+/* <!-- PORTFOLIO --> */
 .portfolio {
   background-color: var(--container-color);
 }
@@ -346,7 +346,7 @@ img {
   color: var(--body-color);
 }
 
-/* Work/Portfolio hover */
+/* Portfolio hover */
 .portfolio__item:hover::after {
   opacity: 1;
 }
